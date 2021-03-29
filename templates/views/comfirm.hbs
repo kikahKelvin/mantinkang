@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>comfirm</title>
+        <style>
+            body{
+                background-color: orange;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            table{
+                margin: 0 auto;
+            }
+            table, tr{
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            td{
+                font-size: 18px;
+                padding: 2%;
+                width: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+              {{> header}}
+        </header>
+        <h1>comfirm transction</h1>
+        <table>
+            <tr>
+                <td>Transaction amount</td>
+                <td>Day of Transaction</td>
+                <td>Name of transction</td>
+               
+            </tr>
+            <tr>
+                <td>{{amount1}}</td>
+                <td>{{day1}}</td>
+                <td>{{name1}}</td>
+                
+            </tr>
+             <tr>
+                <td>{{amount2}}</td>
+                <td>{{day2}}</td>
+                <td>{{name2}}</td>
+               
+            </tr>
+             <tr>
+                <td>{{amount3}}</td>
+                <td>{{day3}}</td>
+                <td>{{name3}}</td>
+               
+            </tr>
+             <tr>
+                <td>{{amount4}}</td>
+                <td>{{day4}}</td>
+                <td>{{name4}}</td>
+              
+               
+            </tr>
+             <tr>
+                <td>{{amount5}}</td>
+                <td>{{day5}}</td>
+                <td>{{name5}}</td>
+               
+            </tr>
+        </table>
+        {{> transaction}}
+    </body>
+</html>
